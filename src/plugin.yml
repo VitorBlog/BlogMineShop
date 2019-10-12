@@ -1,11 +1,12 @@
-name: mineshop
-description: plugin oficial de integração entre loja e servidor para automatizar a entrega de produtos vendidos
+name: BlogMineShop
+description: Mod do plugin oficial do MineShop
 version: 2.0.1
 main: br.com.mineshop.plugin.spigot.Main
 load: POSTWORLD
-author: Sapiente <contato@clayderson.com.br>
-website: https://github.com/clayderson/mineshop-spigot
+authors: [Sapiente <contato@clayderson.com.br>, Vitorblog <eu@vitorblog.com>]
+website: https://github.com/VitorBlog/spigot
 commands:
   mineshop:
     usage: /<command> <token>
-    description:
+  shop:
+  points:
