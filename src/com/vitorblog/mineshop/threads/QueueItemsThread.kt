@@ -19,9 +19,9 @@ class QueueItemsThread(val timerDelay:Int) : BukkitRunnable() {
         try {
             queueItems = msdk.queueItems
         } catch (e: WebServiceException) {
-            Bukkit.getLogger().warning(String.format("[%s] %s", Main.instance!!.description.name, e.message))
+            Bukkit.getLogger().warning(String.format("§b§lBlogMineShop §8»§7 %s", Main.instance!!.description.name, e.message))
         } catch (e: MsdkException) {
-            Bukkit.getLogger().warning(String.format("[%s] %s", Main.instance!!.description.name, e.message))
+            Bukkit.getLogger().warning(String.format("§b§lBlogMineShop §8»§7 %s", Main.instance!!.description.name, e.message))
         }
 
         if (queueItems == null) {
@@ -60,9 +60,9 @@ class QueueItemsThread(val timerDelay:Int) : BukkitRunnable() {
                         Bukkit.dispatchCommand(Bukkit.getConsoleSender(), queueItem.command)
                         Bukkit.getPluginManager().callEvent(ItemDeliveryEvent(queueItem))
                     } catch (e: WebServiceException) {
-                        Bukkit.getLogger().warning(String.format("[%s] %s", Main.instance!!.description.name, e.message))
+                        Bukkit.getLogger().warning(String.format("§b§lBlogMineShop §8»§7 %s", Main.instance!!.description.name, e.message))
                     } catch (e: MsdkException) {
-                        Bukkit.getLogger().warning(String.format("[%s] %s", Main.instance!!.description.name, e.message))
+                        Bukkit.getLogger().warning(String.format("§b§lBlogMineShop §8»§7 %s", Main.instance!!.description.name, e.message))
                     }
 
                 }

@@ -14,12 +14,12 @@ class InvHolder(size:Int, title:String) : InventoryHolder {
 
     fun setItem(slot:Int, itemStack: ItemStack){
         inv.setItem(slot, itemStack)
-        itens.put(slot, InvItem(slot, itemStack, null, null))
+        itens.put(slot, InvItem(slot, itemStack, null))
     }
 
-    fun setItem(slot:Int, itemStack: ItemStack, rightClick:Consumer<InventoryInteractEvent>?, leftClick:Consumer<InventoryInteractEvent>?){
+    fun setItem(slot:Int, itemStack: ItemStack, click:Consumer<InventoryInteractEvent>?){
         inv.setItem(slot, itemStack)
-        itens.put(slot, InvItem(slot, itemStack, rightClick, leftClick))
+        itens.put(slot, InvItem(slot, itemStack, click))
     }
 
     override fun getInventory(): Inventory { return inv }

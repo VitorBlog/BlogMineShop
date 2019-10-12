@@ -21,7 +21,7 @@ class MainCommand : Command{
             main.saveConfig()
 
             sender.sendMessage(String.format(
-                    "%sPronto! Se o token informado estiver correto, este servidor irá sincronizar com sua loja em " + "alguns instantes.",
+                    "%sPronto! Se o token informado estiver correto, este servidor irá sincronizar com sua loja logo após reiniciar o servidor",
                     ChatColor.GREEN
             ))
             return

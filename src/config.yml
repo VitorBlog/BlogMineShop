@@ -4,6 +4,13 @@ eventLoop:
     afterRestart: 60
     delay: 20
 
+mysql:
+  use: false
+  ip: 'localhost'
+  user: 'root'
+  password: 'root'
+  database: 'hypixel'
+
 shop:
   activate: true
   menuRows: 3
@@ -17,15 +24,15 @@ shop:
       slot: 13
       menuRows: 3
       menuTitle: '&bVIPS &8» &7DESCONTO DE 50% EM TUDO!'
-      Items:
+      items:
         VipFerro:
           ID: 57
           name: '&bVIP <Coloque um nome genérico aqui>'
-          price: 5 #Points
-          slot: 13
           lore:
-           - '&bwww.vitorblog.com'
-          Commands:
+            - '&bwww.vitorblog.com'
+          slot: 13
+          price: 5 #Points
+          commands:
             - 'give %player% diamond'
 
 messages:
