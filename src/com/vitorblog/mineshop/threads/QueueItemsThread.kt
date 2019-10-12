@@ -5,6 +5,7 @@ import br.com.mineshop.msdk.exceptions.MsdkException
 import br.com.mineshop.msdk.exceptions.WebServiceException
 import br.com.mineshop.msdk.webservice.endpoints.v1.QueueItem
 import com.vitorblog.mineshop.Main
+import com.vitorblog.mineshop.model.ItemDeliveryEvent
 import org.bukkit.Bukkit
 import org.bukkit.ChatColor
 import org.bukkit.entity.Player
@@ -60,6 +61,7 @@ class QueueItemsThread(val timerDelay:Int) : BukkitRunnable() {
                     try {
                         msdk.hasBeenDelivered(queueItem.nickname, queueItem.uuid)
                         Bukkit.dispatchCommand(Bukkit.getConsoleSender(), queueItem.command)
+                        Bukkit.getPluginManager().callEvent(ItemDeliveryEvent(queueItem))
                     } catch (e: WebServiceException) {
                         Bukkit.getLogger().warning(String.format("[%s] %s", Main.instance!!.description.name, e.message))
                     } catch (e: MsdkException) {
