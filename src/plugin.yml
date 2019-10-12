@@ -1,0 +1,14 @@
+name: BlogMineShop
+description: Mod do plugin oficial do MineShop
+version: 2.0.1
+main: com.vitorblog.mineshop.Main
+load: POSTWORLD
+authors: [Sapiente <contato@clayderson.com.br>, Vitorblog <eu@vitorblog.com>]
+website: https://github.com/VitorBlog/spigot
+commands:
+  mineshop:
+    usage: /<command> <token>
+  shop:
+    aliases: [loja,lojadepontos]
+  points:
+    aliases: [pontos,cash]
