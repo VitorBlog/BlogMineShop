@@ -13,3 +13,13 @@ public void onItemDeliveryEvent(ItemDeliveryEvent itemDeliveryEvent){
     //Your code;
 }
 ```
+
+PlayerBuyOnShopEvent » Chamado quando um item é comprado no shop.
+```java
+@EventHandler
+public void onPlayerBuyOnShopEvent(PlayerBuyOnShopEvent playerBuyOnShopEvent){
+    Player player = playerBuyOnShopEvent.getPlayer();
+    ShopItem shopItem = playerBuyOnShopEvent.getShopItem();
+    //Your code;
+}
+```
