@@ -1,11 +1,10 @@
-package com.vitorblog.mineshop.model
+package com.vitorblog.mineshop.model.event
 
-import br.com.mineshop.msdk.webservice.endpoints.v1.QueueItem
 import org.bukkit.entity.Player
 import org.bukkit.event.Event
 import org.bukkit.event.HandlerList
 
-class ItemDeliveryEvent(val queueItem:QueueItem) : Event() {
+class PlayerBuyOnShopEvent(val player:Player, val item:String) : Event() {
 
     private val handlers = HandlerList()
 

@@ -1,5 +1,35 @@
+token:
 eventLoop:
   timer:
     afterRestart: 60
     delay: 20
-token:
+
+shop:
+  activate: true
+  menuRows: 3
+  menuTitle: '&bShop'
+  categories:
+    VIPS:
+      ID: 57
+      name: '&bVIPS'
+      lore:
+        - '&bwww.vitorblog.com'
+      slot: 13
+      menuRows: 3
+      menuTitle: '&bVIPS &8» &7DESCONTO DE 50% EM TUDO!'
+      Items:
+        VipFerro:
+          ID: 57
+          name: '&bVIP <Coloque um nome genérico aqui>'
+          price: 5 #Points
+          slot: 13
+          lore:
+           - '&bwww.vitorblog.com'
+          Commands:
+            - 'give %player% diamond'
+
+messages:
+  points: '&bYou have %points% points'
+  needPoints: '&bYou need %price% points to buy %item%'
+  buy: '&bYou buy %item% (%price%)'
+  broadcastBuy: '&b%player% buy %item% (%price%)' #Leave empty to disable broadcast

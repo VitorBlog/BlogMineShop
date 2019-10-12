@@ -1,15 +1,12 @@
 package com.vitorblog.mineshop.threads
 
-import br.com.mineshop.msdk.MSDK
 import br.com.mineshop.msdk.exceptions.MsdkException
 import br.com.mineshop.msdk.exceptions.WebServiceException
 import br.com.mineshop.msdk.webservice.endpoints.v1.QueueItem
 import com.vitorblog.mineshop.Main
-import com.vitorblog.mineshop.model.ItemDeliveryEvent
+import com.vitorblog.mineshop.model.event.ItemDeliveryEvent
 import org.bukkit.Bukkit
 import org.bukkit.ChatColor
-import org.bukkit.entity.Player
-import org.bukkit.inventory.ItemStack
 import org.bukkit.scheduler.BukkitRunnable
 
 class QueueItemsThread(val timerDelay:Int) : BukkitRunnable() {

@@ -5,7 +5,7 @@ Tava doidão;
 
 #### Eventos
 
-Chamado quando um item é enviado.
+ItemDeliveryEvent » Chamado quando um item é enviado.
 ```java
 @EventHandler
 public void onItemDeliveryEvent(ItemDeliveryEvent itemDeliveryEvent){
