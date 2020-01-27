@@ -1,4 +1,4 @@
-## MineShop Fork
+## MineShop Fork [![Codacy Badge](https://api.codacy.com/project/badge/Grade/b87784702a5c4ea89802ea645ef6aedc)]=
 Tava doidão;
 
 ### API
