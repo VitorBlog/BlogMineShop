@@ -1,6 +1,6 @@
 name: BlogMineShop
 description: Mod do plugin oficial do MineShop
-version: 1.0.0
+version: 1.0.1
 main: com.vitorblog.mineshop.Main
 load: POSTWORLD
 authors: [Vitorblog <eu@vitorblog.com>, Sapiente <contato@clayderson.com.br>]
